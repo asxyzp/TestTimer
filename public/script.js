@@ -10,14 +10,19 @@ $(document).ready(function(){
 
     //Increasing time
     $(".inc").click(function(){
-        ++time;
-        $(".time").html(`${time}`);   
+        if(Number($(".time").html())<60){
+            ++time;
+            $(".time").html(`${time}`);
+        }
+           
     });
     
-    //Increasing time
+    //Decreasing time
     $(".dec").click(function(){
-        --time;
-        $(".time").html(`${time}`);    
+        if(Number($(".time").html())>0){
+            --time;
+            $(".time").html(`${time}`);
+        }    
     });
     
     let timerStartTime;     //Stores time at which timer starts

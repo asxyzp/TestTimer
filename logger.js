@@ -76,6 +76,17 @@ logger.on('request',(url)=>{
     });
 });
 
+//Setting a new timer
+//When there's an ENOENT error
+logger.on('timerset',(resource)=>{
+    fs.appendFile(path.join(__dirname,'log','log.txt'),`TIMER SET at ${Date.now()}\n`,(err)=>{
+        if(err)
+            throw err;
+        console.log(`TIMER SET AT ${Date.now()}`);
+    });
+});
+
+
 //When there's an ENOENT error
 logger.on('enoent',(resource)=>{
     fs.appendFile(path.join(__dirname,'log','log.txt'),`ENOENT ERROR at ${Date.now()}\n`,(err)=>{

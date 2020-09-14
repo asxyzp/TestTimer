@@ -89,7 +89,7 @@ const server = http.createServer((req,res)=>{
 });
 
 //Setting the port value
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 //Server listening at a given port
 server.listen(port,(err)=>{

@@ -14,8 +14,7 @@ footer,header{
     font-weight: 900;
     text-align: center;
     
-    background-color: black;
-    color: #FFF;   
+    color: #000;
 }
 .bottom-bar{
     padding:0px;
@@ -24,10 +23,10 @@ footer,header{
 }
 
 a {
-    color: #FFF;
+    color: #000;
 }
 a:hover {
-    color: #FFF;
+    color: #000;
 }
 
 .timer-div{
@@ -45,7 +44,7 @@ a:hover {
     width: 80%;
 }
 h1{
-    font-size:20em;
+    font-size:10em;
 }
 .min{
     font-weight:900;

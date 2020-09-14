@@ -9,6 +9,7 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏰</text></svg>">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4d77ecffb7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
@@ -25,25 +26,28 @@
                     <h1 class="time"></h1>
                     <span class="min">Min</span>
                 </div>
+            </div>
+            <div class="row button-div">
                 <button class="btn btn-primary inc">
-                    ⬆️ Increase time (+1m)
+                    <i class="fas fa-plus-square fa-2x"></i>
                 </button>
                 <button class="btn btn-primary dec">
-                    ⬇️ Decrease time (-1m)
+                    <i class="fas fa-minus-square fa-2x"></i>
                 </button>
                 </button>
                 <button class="btn btn-success start">
-                    ⏰ Start the timer
+                    <i class="fas fa-stopwatch-20 fa-2x"></i>
                 </button>
-                <button class="btn btn-warning pause">
-                    🛑 Pause the timer
+                <button class="btn btn-warning restart">
+                    <i class="fas fa-undo-alt fa-2x"></i>
                 </button>
             </div>
         </main>
         <footer class="container-fluid">
             <div class="row bottom-bar">
-                <p>Created by <a href="https://twitter.com/asxyzp">@asxyzp</a></p>
+                
             </div>
         </footer>
+        <div class="timer-bg"></div> 
     </body>
 </html>

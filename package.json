@@ -4,12 +4,13 @@
   "description": "Testing a timer microservice application for logd",
   "main": "index.js",
   "scripts": {
-    "start":"node index",
-    "dev":"nodemon index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "Aashish Loknath Panigrahi (@asxyzp)",
   "license": "MIT",
   "dependencies": {
+    "deta": "0.0.7",
     "uuid": "^8.3.0"
   },
   "devDependencies": {

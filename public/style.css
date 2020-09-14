@@ -1,0 +1,53 @@
+footer,header{
+    width:100vw;
+}
+.top-bar,.bottom-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width:100vw;
+
+    /*Styling text*/
+    font-family: 'Roboto slab';
+    font-weight: 900;
+    text-align: center;
+    
+    background-color: black;
+    color: #FFF;   
+}
+.bottom-bar{
+    padding:0px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: #FFF;
+}
+a:hover {
+    color: #FFF;
+}
+
+.timer-div{
+    display: flex;
+    flex-direction: column;
+}
+.timer-display{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.btn{
+    display: block;
+    margin:10px auto 10px auto;
+    width: 80%;
+}
+h1{
+    font-size:20em;
+}
+.min{
+    font-weight:900;
+    font-size: 5em;
+}

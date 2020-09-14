@@ -10,31 +10,35 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏰</text></svg>">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
         <header class="container-fluid">
             <div class="row top-bar">
-                <h2>⏰ Timer Microservice</h2>
+                <h2>⏰ Timer microservice</h2>
             </div>
         </header>
         <main class="container-fluid">
             <div class="row timer-div">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary inc">
                     Increase time (+1m)
                 </button>
                 <div class="timer-display">
-                    <h1>25</h1>
+                    <h1 class="time"></h1>
                     <span class="min">Min</span>
                 </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary dec">
                     Decrease time (-1m)
+                </button>
+                <button class="btn btn-success start">
+                    ⏰ Start the timer
                 </button>
             </div>
         </main>
         <footer class="container-fluid">
             <div class="row bottom-bar">
-                <p>&copy; Aashish Loknath Panigrahi (<a href="https://twitter.com/asxyzp">@asxyzp</a>)</p>
+                <p>Created by <a href="https://twitter.com/asxyzp">@asxyzp</a></p>
             </div>
         </footer>
     </body>

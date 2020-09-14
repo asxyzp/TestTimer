@@ -25,7 +25,9 @@ $(document).ready(function(){
     let currentTime;        //Stores current time
     let timeElapsed;        //Stores the amount of time which has elapsed
     let timeElapsedPercent; //Stores time which has elapsed
-    
+    let minutesElapsed;     //Stores the number of minutes which have been elapsed
+
+
     $(".start").click(function(){
         
         //Changing properties of buttons
@@ -43,7 +45,11 @@ $(document).ready(function(){
             currentTime = Date.now();
             timeElapsed = currentTime-timerStartTime;
             timeElapsedPercent = (timeElapsed/totalTime)*100;
-            console.log(timeElapsedPercent);
+            minutesElapsed = Number(Math.floor(timeElapsed/60000));
+            
+            console.log(minutesElapsed);
+            $(".time").html(`${time-minutesElapsed}`);
+            
             if(timeElapsed>totalTime){
                 //Changing properties of buttons
                 $(".restart").prop("disabled",false);     //Activates the pause button
